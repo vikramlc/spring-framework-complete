@@ -1,11 +1,11 @@
 package com.vikramlc.springpetclinic.services.map;
 
 import com.vikramlc.springpetclinic.model.Pet;
-import com.vikramlc.springpetclinic.services.CrudService;
+import com.vikramlc.springpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
