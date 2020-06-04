@@ -2,9 +2,11 @@ package com.vikramlc.springpetclinic.services.map;
 
 import com.vikramlc.springpetclinic.model.Visit;
 import com.vikramlc.springpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
