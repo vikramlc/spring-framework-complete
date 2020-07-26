@@ -114,4 +114,20 @@ public class DataLoader implements CommandLineRunner {
 
         System.out.println("Loaded Vets...");
     }
+
+    enum ProductType {
+        BIL, PL
+    }
+
+    enum ProductTypeTest {
+        BIL, PL, CLM
+    }
+
+    public static void main(String[] args) {
+        if (ProductType.BIL.equals(ProductType.BIL)) {
+            System.out.println("Works");
+        } else {
+            System.out.println("Does not work!");
+        }
+    }
 }
